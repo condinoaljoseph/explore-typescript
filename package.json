@@ -1,16 +1,21 @@
 {
-  "name": "explore-typescript",
-  "version": "1.0.0",
-  "description": "My notes in learning typescript",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com-personal:condinoaljoseph/explore-typescript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "explore-typescript",
+	"version": "1.0.0",
+	"description": "My notes in learning typescript",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc docs/index.ts",
+		"dev": "npm run build; node docs/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com-personal:condinoaljoseph/explore-typescript.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"typescript": "^4.0.5"
+	}
 }
